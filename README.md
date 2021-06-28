@@ -1,2 +1,0 @@
-# waleedashiq.github.io
-hesco
