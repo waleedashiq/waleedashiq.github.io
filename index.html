@@ -38,7 +38,7 @@ var myObstacles = [];
 var myScore;
 
 function startGame() {
-    myGamePiece = new component(21, 39, "yellow", 19, 134);
+    myGamePiece = new component(30, 30, "yellow", 35, 125);
     myGamePiece.gravity = 0.05;
     myScore = new component("30px", "Consolas", "cyan", 280, 40, "text");
     myGameArea.start();
@@ -47,8 +47,8 @@ function startGame() {
 var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
-        this.canvas.width = 560;
-        this.canvas.height = 350;
+        this.canvas.width = 480;
+        this.canvas.height = 250;
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNo = 0;
