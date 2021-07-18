@@ -66,8 +66,8 @@ function component(width, height, color, x, y, type) {
         this.image = new Image();
         this.image.src = color;
     }
-    this.width = width;
-    this.height = height;
+    this.width = 100;
+    this.height = 100;
     this.speedX = 0;
     this.speedY = 0;    
     this.x = x;
@@ -100,7 +100,7 @@ function sound(src) {
         this.sound.play();
     }
     this.stop = function(){
-        this.sound.play();
+        this.sound.pause();
     }    
 }
 function component(width, height, color, x, y, type) {
@@ -147,7 +147,7 @@ function component(width, height, color, x, y, type) {
         var otherright = otherobj.x + (otherobj.width);
         var othertop = otherobj.y;
         var otherbottom = otherobj.y + (otherobj.height);
-        var crash = false;
+        var crash = true;
         if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
             crash = false;
         }
