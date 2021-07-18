@@ -38,9 +38,9 @@ var myObstacles = [];
 var myScore;
 
 function startGame() {
-    myGamePiece = new component(30, 30, "red", 10, 120);
+    myGamePiece = new component(15, 15, "green", 10, 50);
     myGamePiece.gravity = 0.05;
-    myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+    myScore = new component("30px", "Consolas", "cyan", 280, 40, "text");
     myGameArea.start();
 }
 
@@ -153,7 +153,13 @@ function accelerate(n) {
 
   </head>
 <body id="demo" onload="startGame()"> 
-
+<br>
+  <br>
+    <br>
+<button color="red" height="50" width="100" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)"> FLY UP</button>
+<p>click the fly UP button to fly your drone</p>
+<p>Don't touch your Drone to Hardles other other wise game will end...</p>
+  
 <h1>How to check HESCO bill online </h1>
   <h3>get duplicate hesco bill</h3>
 <p> Welcome to HESCO Billing website. Here you can get your duplicate Hesco bill for free.
